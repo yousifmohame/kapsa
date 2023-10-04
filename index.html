@@ -3,27 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Kapsa Film</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="img/background.jpg" type="image/x-icon">
+    <script type="module"
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule
+            src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <title>KAPSA LOGIN</title>
+    <link rel="stylesheet" href="style.css" />
 </head>
-<body>
+<body style="display: flex; justify-content: center">
     <header>
-        
         <nav>
 <div class="search_user">
                 <h2>kapsa</h2>
                 <input type="text" placeholder="search..." id="search_input">
                 <dev class="search">
-                    <!--<a href="#" class="card">
-                        <img src="img/background.jpg" alt="">
-                        <div class="cont">
-                            <h3>the death on the nile</h3>
-                            <p>action, 2022 ,<span>IDMB</span><i class="fa-solid fa-star"></i> 9.6</p>
-                        </div>
-                    </a> -->
+                    
                 </dev>
             </div>
             <div class="logo">
@@ -38,44 +32,84 @@
      
             
         </nav>
-        
-        <div class="content">
-            <h1 class="title">محمد السيد فارس</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Sapiente sunt ex labore reiciendis at veniam non! Optio eos.</p>
-            <div class="details">
-                <h6>A Netflix Original Film</h6>
-                <h5 id="gen">triller</h5>
-                <h4>2022</h4>
-                <h3 id="rate"><span>IMDB</span><i class="fa-solid fa-star"></i> 9.6</h3>
-            </div>
-            <div class="btns">
-                <a href="#" id="play">Watch <i class="fa-solid fa-play"></i></a>
-                <a href="#" id="download-main"> <i class="fa-solid fa-download"></i></a>
-            </div>
-        </div>
-        <section>
-            <h4>الاكثر مشاهدة</h4>
-            <i class="fa-solid fa-chevron-left"></i>
-            <i class="fa-solid fa-chevron-right"></i>
-            <div class="cards">
-               <!-- <a href="#" class="card">
-                    <img src="img/background_5.jpg" alt="" class="poster">
-                    <div class="rest_card">
-                        <img src="img/background_4.jpg" alt="">
-                        <div class="cont">
-                            <h4>the polis</h4>
-                            <div class="sub">
-                                <p>action, 2022</p>
-                                <h3><span>IMDB</span><i class="fa-solid fa-star"></i> 9.6</h3>
-                            </div>
-                        </div>
-                    </div>
-                </a> -->
+        </header>
 
-            </div>
-        </section>
-    </header>
-    <script src="app.js"></script>
+    <div class="login-section">
+        <div class="formbox login">
+            <form >
+                <h2> تسجيل الدخول </h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" id="email" required/> 
+                    <label for="email"> Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="logo-pwa"></ion-icon>
+                    </span>
+                    <input id="password" type="password" required /> 
+                    <label for="password"> Password</label>
+                </div>
+
+                <div class="remember-password">
+                    <label>
+                        <input type="checkbox" name="" id="Remember Me" />
+                        تذكر كلمة المرور                                                
+                    </label>
+                    <a href="#"> هل نسيت كلمة المرور  ؟</a>
+                </div>
+
+                <button class="btn"> تسجيل الدخول </button>
+                <div class="create-account">
+                    <p> انشاء حساب جديد  ؟ 
+                        <a href="#" class="register-link"> انشاء حساب </a>
+
+                    </p>
+                </div> 
+            </form>
+        </div>
+
+        <div class="formbox register">
+            <form action="">
+                <h2> انشاء حساب </h2>
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="mail-outline"></ion-icon>
+                    </span>
+                    <input type="email" id="emailr" required/> 
+                    <label for="emailr"> Email</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="logo-pwa"></ion-icon>
+                    </span>
+                    <input type="password" id="passwordr" required /> 
+                    <label for="passwordr"> Password</label>
+                </div>
+
+                <div class="input-box">
+                    <span class="icon">
+                        <ion-icon name="logo-pwa"></ion-icon>
+                    </span>
+                    <input type="password" id="confirmpassword" required /> 
+                    <label for="confirmpassword"> Confirm Password</label>
+                </div> 
+
+                <button class="btn"> انشاء الحساب </button>
+                <div class="create-account">
+                    <p> لديك حساب بالفعل  ؟
+                        <a href="#" class="login-link"> تسجيل الدخول </a> 
+                    </p>
+                </div
+            </form>
+        </div>
+    </div>
+    
+   
+    <script src="./index.js"> </script>
 </body>
 </html>
