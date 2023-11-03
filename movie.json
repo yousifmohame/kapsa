@@ -1,5 +1,5 @@
 [{
-    "name":"مستر X",
+    "name":"BUSINESS",
     "imdb": 9.3,
     "date": "2023",
     "sposter": "https://etbilarabi.com/sites/default/files/styles/article_landing/public/2023-05/344118425_3472902489627626_8029619906010552687_n.jpg?itok=Ib8GYWG8",
@@ -12,7 +12,7 @@
     "medium": "video/the boys 720ph.mp4",
     "high": "video/the boys 1080ph.mp4"
 }, {
-    "name":"البعبع",
+    "name":"CALCULUS",
     "imdb": 9.5,
     "date": "2023",
     "sposter": "https://mycima25.wecima.cam/wp-content/uploads/2023/08/%D8%A7%D9%84%D8%A8%D8%B9%D8%A8%D8%B9.jpg",
@@ -26,7 +26,7 @@
     "high": "video/the boys 1080ph.mp4"
 
 }, {
-    "name":"تاج",
+    "name":"COMPUTER ETHICS",
     "imdb": 9.6,
     "date": "2023",
     "sposter": "https://media0026.elcinema.com/uploads/_315x420_10e9f7b7d74d1c449221acd9a0d5d6e17b57223a730e3f6513f1f1e0b1d1cf6b.jpg",
@@ -40,7 +40,7 @@
     "high": "video/the boys 1080ph.mp4"
 
 }, {
-    "name":"بيت الروبي",
+    "name":"COPUTER PROGRAMING",
     "imdb": 8.3,
     "date": "2023",
     "sposter": "https://v18.mycimaaaa.cfd/uploads/articles/24fa6c8d.jpg",
@@ -54,7 +54,7 @@
     "high": "video/the boys 1080ph.mp4"
 
 }, {
-    "name":"علي الزيرو",
+    "name":"HUMAN RIGHTS",
     "imdb": 9.7,
     "date": "2023",
     "sposter": "https://v18.mycimaaaa.cfd/uploads/articles/d9e7ab72.jpg",
@@ -68,7 +68,7 @@
     "high": "video/the boys 1080ph.mp4"
 
 }, {
-    "name":"كيرة و الجن",
+    "name":"INFORMATION SYSTEM",
     "imdb": 9.9,
     "date": "2022",
     "sposter": "https://alwafd.news/images/images/2022_6_22_17_5_13_266.jpg",
@@ -82,7 +82,7 @@
     "high": "video/the boys 1080ph.mp4"
 
 }, {
-    "name":"مرعي البريمو",
+    "name":"COMPUTER SCIENCE",
     "imdb": 9.3,
     "date": "2023",
     "sposter": "https://www.elaosboa.com/wp-content/uploads/2023/07/elaosboa41037.jpg",
@@ -96,7 +96,7 @@
     "high": "video/the boys 1080ph.mp4"
 
 }, {
-    "name":"العميل صفر",
+    "name":"اPHYSICS",
     "imdb": 9.3,
     "date": "2023",
     "sposter": "https://img.youm7.com/ArticleImgs/2023/7/27/414676-12b7277c-d2e1-4ad8-95d8-3c2beca4be48.jfif",
@@ -104,90 +104,6 @@
     "genre": "كوميدي",
     "type": "series",
     "url": "https://v18.mycimaaaa.cfd/play.php?vid=901445267",
-    "trailer": "the boys trailer.mp4",
-    "low": "video/the boys 480ph.mp4",
-    "medium": "video/the boys 720ph.mp4",
-    "high": "video/the boys 1080ph.mp4"
-
-}, {
-    "name":"the polis",
-    "imdb": 9.3,
-    "date": "2022",
-    "sposter": "img/background_2.jpg",
-    "bposter": "img/background_2.jpg",
-    "genre": "Action",
-    "type": "series",
-    "url": "the boys.html",
-    "trailer": "the boys trailer.mp4",
-    "low": "video/the boys 480ph.mp4",
-    "medium": "video/the boys 720ph.mp4",
-    "high": "video/the boys 1080ph.mp4"
-
-}, {
-    "name":"the polis",
-    "imdb": 9.3,
-    "date": "2022",
-    "sposter": "img/background_2.jpg",
-    "bposter": "img/background_2.jpg",
-    "genre": "Action",
-    "type": "series",
-    "url": "the boys.html",
-    "trailer": "the boys trailer.mp4",
-    "low": "video/the boys 480ph.mp4",
-    "medium": "video/the boys 720ph.mp4",
-    "high": "video/the boys 1080ph.mp4"
-
-}, {
-    "name":"the polis",
-    "imdb": 9.3,
-    "date": "2022",
-    "sposter": "img/background_2.jpg",
-    "bposter": "img/background_2.jpg",
-    "genre": "Action",
-    "type": "series",
-    "url": "the boys.html",
-    "trailer": "the boys trailer.mp4",
-    "low": "video/the boys 480ph.mp4",
-    "medium": "video/the boys 720ph.mp4",
-    "high": "video/the boys 1080ph.mp4"
-
-}, {
-    "name":"the polis",
-    "imdb": 9.3,
-    "date": "2022",
-    "sposter": "img/background_2.jpg",
-    "bposter": "img/background_2.jpg",
-    "genre": "Action",
-    "type": "series",
-    "url": "the boys.html",
-    "trailer": "the boys trailer.mp4",
-    "low": "video/the boys 480ph.mp4",
-    "medium": "video/the boys 720ph.mp4",
-    "high": "video/the boys 1080ph.mp4"
-
-}, {
-    "name":"the polis",
-    "imdb": 9.3,
-    "date": "2022",
-    "sposter": "img/background_2.jpg",
-    "bposter": "img/background_2.jpg",
-    "genre": "Action",
-    "type": "series",
-    "url": "the boys.html",
-    "trailer": "the boys trailer.mp4",
-    "low": "video/the boys 480ph.mp4",
-    "medium": "video/the boys 720ph.mp4",
-    "high": "video/the boys 1080ph.mp4"
-
-}, {
-    "name":"the polis",
-    "imdb": 9.3,
-    "date": "2022",
-    "sposter": "img/background_2.jpg",
-    "bposter": "img/background_2.jpg",
-    "genre": "Action",
-    "type": "series",
-    "url": "the boys.html",
     "trailer": "the boys trailer.mp4",
     "low": "video/the boys 480ph.mp4",
     "medium": "video/the boys 720ph.mp4",
