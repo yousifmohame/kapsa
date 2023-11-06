@@ -30,7 +30,7 @@ header::before {
   position: absolute;
   width: 100%;
   height: 100%;
-  background: url('')no-repeat center center/cover;
+  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhljpg5PPCOBqdtU8AxCAFa0_ionmYdX8dIT_Y4sD8VaoyyW7WkN6KTkBCndNQ3Lc5fWF90e1bw8cu7UXjy3a4IODL-56GLwBMv5gvwSH_V4myXFx_WqkmxSsw1_t4ReS1lkH37vuXS6Y3sGQG_OQa-oGiqnnPCmwcreJYxBVdrN_XACLsO9o-9o2SflgEu/s7680/wallpaperflare.com_wallpaper.jpg')no-repeat center center/cover;
   
   z-index: -1;
 }
