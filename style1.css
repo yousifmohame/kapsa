@@ -562,9 +562,7 @@ header .show .tv_show .box .card img{
   object-fit: cover;
   object-position: center;
 }
-
-
- @media screen and (max-width: 788px) {
+@media screen and (max-width: 788px) {
     header {
         position: relative;
         width: 100%;
@@ -574,6 +572,12 @@ header .show .tv_show .box .card img{
         padding: 0px 10px;
         height: 15%;
     }
+    header nav .search_user h2 {
+      width: 90px;
+      font-size: 30px;
+      color: #0079ff;
+      padding-top: 30px;
+  }
     header nav .logo ul{
         position: absolute;
         top: 0px;
@@ -586,23 +590,44 @@ header .show .tv_show .box .card img{
         font-size: 12px;
     }
     header .second {
-        padding-left: 10px;
+        
         width: 1000px;
-        height: 300px;
+        height: 235px;
+        margin-top: 20px;
     }
     header .show {
-        padding-left: 10px;
+        
         width: 1000px;
-        height: 300px;
+        height: 190px;
     }
     header .upcoming {
-        padding-left: 10px;
+        
         width: 1000px;
-        height: 300px;
+        height: 190px;
     }
+    header nav .search_user input {
+        padding: 5px 9px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background: rgba(209, 65, 209, .3);
+        color: #0079ff;
+        margin-left: 5px;
+        margin-top: 31px;
+        float: right;
+    }
+    header nav .search_user .search {
+      position: absolute;
+      width: 120px;
+      height: 70px;
+      left: 0;
+      top: 40px;
+      z-index: 99999;
+      overflow-y: auto;
+  }
     header .second .latest .box .card .details {
-        width: 140px;
-        height: 200px;
+        width: 130px;
+        height: 170px;
         overflow: hidden;
         position: absolute;
         border-radius: 7px;
@@ -610,8 +635,8 @@ header .show .tv_show .box .card img{
         opacity: 0;
     }
     header .upcoming .movies_box .box .card .details {
-        width: 140px;
-        height: 200px;
+        width: 130px;
+        height: 170px;
         overflow: hidden;
         position: absolute;
         border-radius: 7px;
@@ -619,8 +644,8 @@ header .show .tv_show .box .card img{
         opacity: 0;
     }
     header .show .tv_show .box .card .details {
-        width: 140px;
-        height: 200px;
+        width: 130px;
+        height: 170px;
         overflow: hidden;
         position: absolute;
         border-radius: 7px;
@@ -628,20 +653,20 @@ header .show .tv_show .box .card img{
         opacity: 0;
     }
     header .second .latest .box .card img {
-        width: 84%;
-        height: 72%;
+        width: 75%;
+        height: 45%;
         object-fit: cover;
         object-position: center;
     }
     header .upcoming .movies_box .box .card img {
-        width: 84%;
-        height: 72%;
+        width: 75%;
+        height: 45%;
         object-fit: cover;
         object-position: center;
     }
     header .show .tv_show .box .card img {
-        width: 84%;
-        height: 72%;
+        width: 75%;
+        height: 45%;
         object-fit: cover;
         object-position: center;
     }
@@ -649,4 +674,8 @@ header .show .tv_show .box .card img{
         padding: 0px 10px;
     }
     }
+
+ 
+    
+    
     
