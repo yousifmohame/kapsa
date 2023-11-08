@@ -27,7 +27,7 @@ header::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvVPYsDg5gRaA65fJKdTGoVAnoUcgQyf7squ0QArhL9E9hkEhcvIe1muQvBxiFG2gqd2TJiSVz2uYkQf_nFLkvmyDTtqkQvHfGeNacISrPbTNgkmngmYY3gMxeSnfTcBO7NFqlLoD5lcY7w7W9ghu-fijS-10jN9uGYJTtqIy13iRYUpxjcnUNe5pPRqoz/s2184/you.png')no-repeat center center/cover;
+    background: url('')no-repeat center center/cover;
     
     z-index: -1;
 }
@@ -40,9 +40,6 @@ header::after {
     background: linear-gradient(180deg, transparent, #000);
     z-index: -1;
 }
-
-
-
 header nav {
     width: 100%;
     height: 10%;
@@ -244,37 +241,46 @@ header nav .search_user .search .card .cont span{
 header .second{
   width: 100%;
   height: auto;
-  margin: 0 auto;
-  padding-bottom: 25px;
-  position: relative;
+  padding: 0px 50px;
+  bottom: 20px;
+  color: #fff;
 }
 
-header .second .latest{
-  width: 95%;
-  margin: 0 auto;
-}
-header .second .latest h1{
+
+
+header .second  h1{
     font-size: 20px;
     color: #fff;
     margin-bottom: 20px;
   }
 
-header .second .latest .box{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header .second  .cards{
+  position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+header .second .cards::-webkit-scrollbar{
+  display: none;
+
 }
 
-header .second .latest .box .card{
-  width: 250px;
+header .second  .cards .card{
   height: 370px;
-  margin: 10px;
-  overflow: hidden;
+  position: relative;
+  min-width: 220px;
   border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
 }
 
-header .second .latest .box .card .details{
-  width: 220px;
+header .second  .cards .card .details{
+  min-width: 220px;
   height: 370px;
   overflow: hidden;
   position: absolute;
@@ -282,13 +288,17 @@ header .second .latest .box .card .details{
   transition: 0.3s;
   opacity: 0;
 }
+header section .cards .card:hover {
+  min-width: 300px;
+  overflow: hidden;
+}
 
-header .second .latest .box .card:hover .details{
+header .second  .cards .card:hover .details{
   opacity: 1;
   background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
 }
 
-header .second .latest .box .card .details .left{
+header .second  .cards .card .details .left{
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -297,12 +307,12 @@ header .second .latest .box .card .details .left{
   opacity: 0;
 }
 
-header .second .latest .box .card:hover .details .left{
+header .second  .cards .card:hover .details .left{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .second .latest .box .card .details .left p.name{
+header .second .cards .card .details .left p.name{
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -311,7 +321,7 @@ header .second .latest .box .card .details .left p.name{
 }
 
 
-header .second .latest .box .card .details .right{
+header .second .cards .card .details .right{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -321,12 +331,12 @@ header .second .latest .box .card .details .right{
   opacity: 0;
 }
 
-header .second .latest .box .card:hover .details .right{
+header .second  .cards .card:hover .details .right{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .second .latest .box .card .details .right i{
+header .second  .cards .card .details .right i{
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -339,13 +349,55 @@ header .second .latest .box .card .details .right i{
   margin: 0 10px 8px 0;
 }
 
-header .second .latest .box .card img{
+header .second  .cards .card img{
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    
+}
+header .second .cards .card::after {
+  content: '';
+  position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-  object-position: center;
+  background: linear-gradient(180deg, transparent, #000);
+  left: 0;
+  bottom: 0;
+  z-index: -1;
 }
 
+header .second .fa-chevron-left , .fa-chevron-right {
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  width: 25px;
+  height: 25px;
+  background: rgb(255, 255, 255, .3);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+  transition: .3s linear;
+  z-index: 999999999;
+  opacity: 0;
+}
+
+header .second .fa-chevron-right {
+ left: unset;
+ right: 3%;
+ top: 250px;
+}
+
+header .second:hover .fa-chevron-right {
+  opacity: 1;
+}
+
+header .second:hover .fa-chevron-left {
+  opacity: 1;
+}
 
 
 
@@ -354,38 +406,44 @@ header .second .latest .box .card img{
 header .upcoming{
   width: 100%;
   height: auto;
-  margin: 0 auto;
-  padding-bottom: 25px;
-  position: relative;
+  padding: 0px 50px;
+  bottom: 20px;
+  color: #fff;
 }
 
-header .upcoming .movies_box{
-  width: 95%;
-  margin: 0 auto;
-}
-
-header .upcoming .movies_box h1{
+header .upcoming  h1{
   font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
 }
-header .upcoming .movies_box .box{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header .upcoming  .box{
+  position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+header .upcoming .box::-webkit-scrollbar{
+  display: none;
+
 }
 
-header .upcoming .movies_box .box .card{
-  width: 250px;
+header .upcoming  .box .card{
   height: 370px;
-  margin: 10px;
-  overflow: hidden;
+  position: relative;
+  min-width: 220px;
   border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
 }
 
-header .upcoming .movies_box .box .card .details{
-  width: 220px;
-  height: 370px;
+header .upcoming .box .card .details{
+  min-width: 220px;
+  height: 360px;
   overflow: hidden;
   position: absolute;
   border-radius: 8px;
@@ -393,12 +451,12 @@ header .upcoming .movies_box .box .card .details{
   opacity: 0;
 }
 
-header .upcoming .movies_box .box .card:hover .details{
+header .upcoming .box .card:hover .details{
   opacity: 1;
   background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
 }
 
-header .upcoming .movies_box .box .card .details .left{
+header .upcoming .box .card .details .left{
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -407,12 +465,12 @@ header .upcoming .movies_box .box .card .details .left{
   opacity: 0;
 }
 
-header .upcoming .movies_box .box .card:hover .details .left{
+header .upcoming .box .card:hover .details .left{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .upcoming .movies_box .box .card .details .left p.name{
+header .upcoming .box .card .details .left p.name{
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -421,7 +479,7 @@ header .upcoming .movies_box .box .card .details .left p.name{
 }
 
 
-header .upcoming .movies_box .box .card .details .right{
+header .upcoming .box .card .details .right{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -431,12 +489,12 @@ header .upcoming .movies_box .box .card .details .right{
   opacity: 0;
 }
 
-header .upcoming .movies_box .box .card:hover .details .right{
+header .upcoming .box .card:hover .details .right{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .upcoming .movies_box .box .card .details .right i{
+header .upcoming  .box .card .details .right i{
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -449,51 +507,59 @@ header .upcoming .movies_box .box .card .details .right i{
   margin: 0 10px 8px 0;
 }
 
-header .upcoming .movies_box .box .card img{
+header .upcoming  .box .card img{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    height: 100%;
+    border-radius: 8px;
 }
+
+
+
 
 /*----------*/
 
 header .show{
   width: 100%;
   height: auto;
-  margin: 0 auto;
-  padding-bottom: 25px;
-  position: relative;
+  padding: 0px 50px;
+  bottom: 20px;
+  color: #fff;
 }
 
-header .show .tv_show{
-  width: 95%;
-  margin: 0 auto;
-}
-
-header .show .tv_show h1{
+header .show h1{
   font-size: 20px;
   color: #fff;
   margin-bottom: 20px;
 }
 
-header .show .tv_show .box{
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+header .show .boxy{
+  position: relative;
+    width: 100%;
+    height: 350px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+    scroll-behavior: smooth;
 }
 
-header .show .tv_show .box .card{
-  width: 250px;
+header .show .boxy::-webkit-scrollbar{
+  display: none;
+
+}
+header .show .boxy .card{
   height: 370px;
-  margin: 10px;
-  overflow: hidden;
+  position: relative;
+  min-width: 220px;
   border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
 }
 
-header .show .tv_show .box .card .details{
-  width: 220px;
-  height: 370px;
+header .show .boxy .card .details{
+  min-width: 220px;
+  height: 360px;
   overflow: hidden;
   position: absolute;
   border-radius: 8px;
@@ -501,12 +567,12 @@ header .show .tv_show .box .card .details{
   opacity: 0;
 }
 
-header .show .tv_show .box .card:hover .details{
+header .show .boxy .card:hover .details{
   opacity: 1;
   background: linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.7));
 }
 
-header .show .tv_show .box .card .details .left{
+header .show .boxy .card .details .left{
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -515,12 +581,12 @@ header .show .tv_show .box .card .details .left{
   opacity: 0;
 }
 
-header .show .tv_show .box .card:hover .details .left{
+header .show .boxy .card:hover .details .left{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .show .tv_show .box .card .details .left p.name{
+header .show .boxy .card .details .left p.name{
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -528,7 +594,7 @@ header .show .tv_show .box .card .details .left p.name{
   margin-bottom: 10px;
 }
 
-header .show .tv_show .box .card .details .right{
+header .show .boxy .card .details .right{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -538,12 +604,12 @@ header .show .tv_show .box .card .details .right{
   opacity: 0;
 }
 
-header .show .tv_show .box .card:hover .details .right{
+header .show .boxy .card:hover .details .right{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .show .tv_show .box .card .details .right i{
+header .show .boxy .card .details .right i{
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -556,13 +622,13 @@ header .show .tv_show .box .card .details .right i{
   margin: 0 10px 8px 0;
 }
 
-header .show .tv_show .box .card img{
+header .show .boxy .card img{
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+    height: 100%;
+    border-radius: 8px;
 }
-@media screen and (max-width: 788px) {
+
+ @media screen and (max-width: 788px) {
     header {
         position: relative;
         width: 100%;
@@ -572,7 +638,7 @@ header .show .tv_show .box .card img{
         padding: 0px 10px;
         height: 15%;
     }
-    header nav .search_user h2 {
+    header nav  h2 {
       width: 90px;
       font-size: 30px;
       color: #0079ff;
@@ -590,22 +656,21 @@ header .show .tv_show .box .card img{
         font-size: 12px;
     }
     header .second {
-        
-        width: 1000px;
-        height: 235px;
-        margin-top: 20px;
-    }
+      width: 100%;
+      height: 270px;
+      margin-top: 20px;
+  }
     header .show {
         
-        width: 1000px;
-        height: 190px;
+        width: 100%;
+        height: 230px;
     }
     header .upcoming {
         
-        width: 1000px;
-        height: 190px;
+        width: 100%;
+        height: 230px;
     }
-    header nav .search_user input {
+    header nav  input {
         padding: 5px 9px;
         border-radius: 20px;
         border: none;
@@ -616,66 +681,102 @@ header .show .tv_show .box .card img{
         margin-top: 31px;
         float: right;
     }
-    header nav .search_user .search {
+  header nav .search_user .search {
+    position: absolute;
+    width: 380px;
+    height: 30px;
+    left: 0;
+    top: 40px;
+    z-index: 99999;
+    overflow-y: auto;
+}
+header .second .cards .card .details {
+  min-width: 159px;
+  height: 220px;
+  overflow: hidden;
+  position: absolute;
+  border-radius: 8px;
+  transition: 0.3s;
+  opacity: 0;
+}
+header .second .cards {
+  position: relative;
+  width: 115%;
+  height: 220px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+header .second .cards .card {
+  height: 221px;
+  position: relative;
+  min-width: 158px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
+}
+header .upcoming .box .card .details {
+      min-width: 159px;
+      height: 220px;
+      overflow: hidden;
       position: absolute;
-      width: 120px;
-      height: 70px;
-      left: 0;
-      top: 40px;
-      z-index: 99999;
-      overflow-y: auto;
-  }
-    header .second .latest .box .card .details {
-        width: 130px;
-        height: 170px;
-        overflow: hidden;
-        position: absolute;
-        border-radius: 7px;
-        transition: 0.3s;
-        opacity: 0;
-    }
-    header .upcoming .movies_box .box .card .details {
-        width: 130px;
-        height: 170px;
-        overflow: hidden;
-        position: absolute;
-        border-radius: 7px;
-        transition: 0.3s;
-        opacity: 0;
-    }
-    header .show .tv_show .box .card .details {
-        width: 130px;
-        height: 170px;
-        overflow: hidden;
-        position: absolute;
-        border-radius: 7px;
-        transition: 0.3s;
-        opacity: 0;
-    }
-    header .second .latest .box .card img {
-        width: 75%;
-        height: 45%;
-        object-fit: cover;
-        object-position: center;
-    }
-    header .upcoming .movies_box .box .card img {
-        width: 75%;
-        height: 45%;
-        object-fit: cover;
-        object-position: center;
-    }
-    header .show .tv_show .box .card img {
-        width: 75%;
-        height: 45%;
-        object-fit: cover;
-        object-position: center;
-    }
-    header section {
-        padding: 0px 10px;
-    }
-    }
+      border-radius: 8px;
+      transition: 0.3s;
+      opacity: 0;
+}
+header .upcoming .box {
+      position: relative;
+      width: 115%;
+      height: 220px;
+      margin-top: 10px;
+      display: flex;
+      align-items: center;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+}
+header .upcoming .box .card {
+      height: 221px;
+      position: relative;
+      min-width: 158px;
+      border-radius: 8px;
+      margin-right: 10px;
+      background: #000;
+      transition: .3s linear;
+}
+header .show .boxy .card .details {
+      min-width: 159px;
+      height: 220px;
+      overflow: hidden;
+      position: absolute;
+      border-radius: 8px;
+      transition: 0.3s;
+      opacity: 0;
+}
+header .show .boxy {
+  position: relative;
+  width: 115%;
+  height: 220px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+header .show .boxy .card {
+  height: 221px;
+  position: relative;
+  min-width: 158px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background: #000;
+  transition: .3s linear;
+}
 
- 
-    
-    
+header section {
+        padding: 0px 10px;
+}
+}
     
