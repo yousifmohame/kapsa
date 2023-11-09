@@ -542,6 +542,9 @@ header section:hover .fa-chevron-right {
         padding: 0px 10px;
     }
     }
+    header .content h1 {
+    font-size: 18px;
+}
     @media screen and (max-width: 788px) {
         header video {
             position: absolute;
