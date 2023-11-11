@@ -507,8 +507,8 @@ header section:hover .fa-chevron-right {
     opacity: 1;
  }
 
-    }
- }
+    
+ 
  @media screen and (max-width: 788px) {
     header {
         position: relative;
@@ -536,8 +536,7 @@ header section:hover .fa-chevron-right {
     header section {
         padding: 0px 10px;
     }
-    }
     header .content h1 {
     font-size: 18px;
 }
-        }
+}
