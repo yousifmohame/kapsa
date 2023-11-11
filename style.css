@@ -507,11 +507,6 @@ header section:hover .fa-chevron-right {
     opacity: 1;
  }
 
- @media screen and (max-width: 1250px) {
-    header video {
-        position: absolute;
-        width: 200%;
-        height: 230%;
     }
  }
  @media screen and (max-width: 788px) {
@@ -545,10 +540,4 @@ header section:hover .fa-chevron-right {
     header .content h1 {
     font-size: 18px;
 }
-    @media screen and (max-width: 788px) {
-        header video {
-            position: absolute;
-            width: 520%;
-            height: 230%;
-        }
         }
