@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;800&display=swap');
-*{
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
@@ -8,7 +8,7 @@
 body {
     width: 100%;
     height: 100vh;
-    background: rgb(46, 45, 46);
+    background: rgb(23, 23, 23);
     font-family: 'Poppins', sans-serif;
     display: flex;
     align-items: center;
@@ -19,10 +19,10 @@ header {
     position: relative;
     width: 100%;
     height: 100%;
-    border: 1px solid #000000;
-    border-radius: 5px;
+    /* border: 1px solid #fff; */
+    border-radius: 20px;
     overflow: hidden;
-    box-shadow: 0px 5px 25px -5px #000;
+    box-shadow: 0px 10px 25px -8px #000;
 }
 
 header::before {
@@ -30,8 +30,8 @@ header::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgvVPYsDg5gRaA65fJKdTGoVAnoUcgQyf7squ0QArhL9E9hkEhcvIe1muQvBxiFG2gqd2TJiSVz2uYkQf_nFLkvmyDTtqkQvHfGeNacISrPbTNgkmngmYY3gMxeSnfTcBO7NFqlLoD5lcY7w7W9ghu-fijS-10jN9uGYJTtqIy13iRYUpxjcnUNe5pPRqoz/s2184/you.png')no-repeat center center/cover;
-    
+    background: url('img/money heist1.jpg')no-repeat center center/cover;
+    opacity: .6;
     z-index: -1;
 }
 
@@ -44,59 +44,51 @@ header::after {
     z-index: -1;
 }
 
-header video {
-    position: absolute;
-    width: 125%;
-    height: 230%;
-    top: -66%;
-    z-index: -1;
-}
+
 
 header nav {
     width: 100%;
     height: 10%;
-    display: flex;
+    /* border: 1px solid #fff; */
     align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 0px 20px;
 }
 
-header nav .logo {
+header nav .logo_ul {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 35px 0px;
+    float: inline-end;
 }
 
-header nav .search_user h2{
-    width: 90px;
-    font-size: 30px;
-    color:#0079ff;  
-}
 
-header nav .logo ul{
+
+header nav .logo_ul ul {
     display: flex;
     align-items: center;
     justify-content: center;
     list-style: none;
 }
 
-header nav .logo ul li{
+header nav .logo_ul ul li {
     padding: 3px 15px;
-    
 }
 
-header nav .logo ul li a{
+header nav .logo_ul ul li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     transition: .3s linear;
 }
 
-header nav .logo ul li a:hover{
-    color: rgb(31, 128, 238);
+header nav .logo_ul ul li a:hover {
+    color: rgb(31, 128, 238, .7);
 }
-header nav .logo .btnlogin-popup {
+
+header nav .logo_ul .btnlogin-popup {
     width: 52px;
     height: 25px;
     cursor: pointer;
@@ -112,7 +104,7 @@ header nav .logo .btnlogin-popup a{
     text-decoration: none;
     color: #fff;
   }
-header nav .logo .btnlogin-popup:after {
+header nav .logo_ul .btnlogin-popup:after {
       content: '';
       width: 100%;
       height: 100%;
@@ -126,7 +118,7 @@ header nav .logo .btnlogin-popup:after {
         left: 0;
         top: 0;
 }
-header nav .logo .btnlogin-popup:active {
+header nav .logo_ul .btnlogin-popup:active {
     transform: scale(0.9) rotate(3deg);
     background:radial-gradient(circle
     farthest-corner at 10% 20%, 
@@ -136,33 +128,42 @@ header nav .logo .btnlogin-popup:active {
 
 }
 
-header nav .search_user{
+header nav .search_user {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 35px 0px;
+    float: left;
 }
 
+
 header nav .search_user input {
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 20px;
     border: none;
     outline: none;
-    background: rgba(209, 65, 209, .3);
-    color: #0079ff ;
-    margin-left: 10px;
+    background: rgb(255, 255, 255, .3);
+    color: #fff;
+    margin-right: 20px;
 }
 
-header nav .search_user input::placeholder{
+header nav .search_user input::placeholder {
     color: #fff;
 }
 
-header nav .search_user .search{
+header nav .search_user img {
+    width: 23px;
+    height: 23px;
+    border-radius: 50%;
+}
+
+header nav .search_user .search {
     position: absolute;
-    width: 320px;
+    width: 190px;
     height: 270px;
-    left: 0;
-    top: 40px;
+    right: 40px;
+    top: 60px;
     z-index: 99999;
     overflow-y: auto;
 }
@@ -185,11 +186,11 @@ header nav .search_user .search:hover::-webkit-scrollbar {
     visibility: visible;
 }
 
-header nav .search-user .search:hover::-webkit-scrollbar-thumb {
+header nav .search_user .search:hover::-webkit-scrollbar-thumb {
     visibility: visible;
 }
 
-header nav .search_user .search .card{
+header nav .search_user .search .card {
     position: relative;
     width: 100%;
     height: 50px;
@@ -212,19 +213,19 @@ header nav .search_user .search .card::before {
     z-index: -1;
 }
 
-header nav .search_user .search .card img{
+header nav .search_user .search .card img {
     width: 28px;
     height: 90%;
     border-radius: 2px;
     margin-left: 8px;
 }
 
-header nav .search_user .search .card .cont{
+header nav .search_user .search .card .cont {
     margin-left: 10px;
     color: #fff;
 }
 
-header nav .search_user .search .card .cont h3{
+header nav .search_user .search .card .cont h3 {
     font-size: 15px;
     line-height: 25px;
     overflow: hidden;
@@ -233,12 +234,12 @@ header nav .search_user .search .card .cont h3{
     width: 250px;
 }
 
-header nav .search_user .search .card .cont p{
-    font-size: 12px;
+header nav .search_user .search .card .cont p {
+    font-size: 10px;
     color: rgb(255, 255, 255, .8);
 }
 
-header nav .search_user .search .card .cont span{
+header nav .search_user .search .card .cont span {
     background: yellow;
     color: #000;
     padding: 0px 3px;
@@ -246,55 +247,60 @@ header nav .search_user .search .card .cont span{
     font-weight: 500;
 }
 
-header .content{
+header nav .search_user h2{
+    width: 105px;
+    font-size: 30px;
+    color:#0079ff;  
+}
+
+header .content {
     position: relative;
     color: #fff;
     margin-top: 50px;
     padding-left: 50px;
 }
 
-header .content h1{
+header .content h1 {
     font-size: 50px;
 }
 
-header .content p{
-    font-size: 11px;
+header .content p {
+    font-size: 15px;
     width: 350px;
-    word-break: break-all;
 }
 
-header .content .details{
+header .content .details {
     display: flex;
     align-items: center;
     margin-top: 10px;
 }
 
-header .content .details h6{
+header .content .details h6 {
     color: rgb(255, 255, 255, .8);
+    font-size: 13px;
+    margin-right: 10px;
+}
+
+header .content .details h5 {
+    color: rgb(142, 230, 48);
     font-size: 10px;
     margin-right: 10px;
 }
 
-header .content .details h5{
-    color: rgb(142, 230, 48);
-    font-size: 10px;
-    margin-left: 10px;
-}
-
-header .content .details h4{
+header .content .details h4 {
     color: #fff;
     font-size: 10px;
-    margin-left: 10px;
+    margin-right: 10px;
 }
 
-header .content .details h3{
+header .content .details h3 {
     color: #fff;
     display: flex;
     align-items: center;
     font-size: 10px;
 }
 
-header .content .details h3 span{
+header .content .details h3 span {
     background: yellow;
     color: #000;
     padding: 0px 3px;
@@ -302,18 +308,17 @@ header .content .details h3 span{
     font-weight: 500;
 }
 
-header .content .details h3 i{
+header .content .details h3 i {
     margin-right: 5px;
-
 }
 
-header .content .btns{
-    margin-top: 60px;
+header .content .btns {
+    margin-top: 20px;
     display: flex;
     align-items: center;
 }
 
-header .content .btns a{
+header .content .btns a {
     padding: 8px 12px;
     font-size: 15px;
     font-weight: 600;
@@ -326,33 +331,33 @@ header .content .btns a{
 }
 
 @keyframes button {
-    0%{
+    0% {
         background: linear-gradient(0deg, #00bdff, #0079ff);
     }
-    12%{
+    12% {
         background: linear-gradient(45deg, #00bdff, #0079ff);
     }
-    24%{
+    24% {
         background: linear-gradient(95deg, #00bdff, #0079ff);
     }
-    36%{
+    36% {
         background: linear-gradient(145deg, #00bdff, #0079ff);
     }
-    48%{
+    48% {
         background: linear-gradient(195deg, #00bdff, #0079ff);
     }
-    60%{
+    60% {
         background: linear-gradient(245deg, #00bdff, #0079ff);
     }
-    72%{
+    72% {
         background: linear-gradient(295deg, #00bdff, #0079ff);
     }
-    100%{
+    100% {
         background: linear-gradient(360deg, #00bdff, #0079ff);
     }
 }
 
-header section{
+header section {
     position: absolute;
     width: 100%;
     height: auto;
@@ -361,10 +366,11 @@ header section{
     color: #fff;
 }
 
-header section .cards{
+header section .cards {
     position: relative;
     width: 100%;
     height: 200px;
+    /* border: 1px solid #fff; */
     margin-top: 10px;
     display: flex;
     align-items: center;
@@ -372,22 +378,22 @@ header section .cards{
     scroll-behavior: smooth;
 }
 
-header section .cards::-webkit-scrollbar{
+header section .cards::-webkit-scrollbar {
     display: none;
-
 }
 
-header section .cards .card{
+header section .cards .card {
     position: relative;
     min-width: 130px;
     height: 180px;
+    /* border: 1px solid #fff; */
     border-radius: 8px;
     margin-right: 10px;
     background: #000;
     transition: .3s linear;
 }
 
-header section .cards .card .poster{
+header section .cards .card .poster {
     width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -399,7 +405,7 @@ header section .cards .card:hover {
     overflow: hidden;
 }
 
-header section .cards .card .rest_card{
+header section .cards .card .rest_card {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -411,7 +417,7 @@ header section .cards .card .rest_card{
     transition: 1s linear;
 }
 
-header section .cards .card .rest_card img{
+header section .cards .card .rest_card img {
     position: relative;
     width: 100%;
     height: 100%;
@@ -430,7 +436,7 @@ header section .cards .card .rest_card::after {
     z-index: -1;
 }
 
-header section .cards .card .rest_card .cont{
+header section .cards .card .rest_card .cont {
     position: absolute;
     width: 100%;
     bottom: 10px;
@@ -439,43 +445,44 @@ header section .cards .card .rest_card .cont{
     padding: 0px 20px;
 }
 
-header section .cards .card .rest_card .cont .sub{
+header section .cards .card .rest_card .cont .sub {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-header section .cards .card .rest_card .cont .sub p{
+header section .cards .card .rest_card .cont .sub p {
     font-size: 12px;
     font-weight: 400;
     color: rgb(255, 255, 255, .7);
 }
 
-header section .cards .card .rest_card .cont .sub h3{
+header section .cards .card .rest_card .cont .sub h3 {
     color: #fff;
     font-size: 12px;
     display: flex;
     align-items: center;
 }
 
-header section .cards .card .rest_card .cont .sub h3 span{
+header section .cards .card .rest_card .cont .sub h3 span {
     background: yellow;
     color: #000;
     padding: 0px 3px;
-    margin: 0px 5px 0px 5px;
+    margin: 0px 5px 0px 10px;
     font-weight: 500;
     border-radius: 2px;
 }
 
-header section .cards .card .rest_card .cont .sub h3 i{
+header section .cards .card .rest_card .cont .sub h3 i {
     margin-right: 3px;
 }
 
-header section .cards .card:hover .rest_card{
+header section .cards .card:hover .rest_card {
     opacity: 1;
 }
 
-header section .fa-chevron-left , .fa-chevron-right {
+header section .bi-chevron-left,
+.bi-chevron-right {
     position: absolute;
     top: 50%;
     left: 3%;
@@ -494,49 +501,94 @@ header section .fa-chevron-left , .fa-chevron-right {
     opacity: 0;
 }
 
-header section .fa-chevron-right {
-   left: unset;
-   right: 3%;
+header section .bi-chevron-right {
+    left: unset;
+    right: 3%;
 }
 
-header section:hover .fa-chevron-right {
+header section:hover .bi-chevron-right {
     opacity: 1;
- }
+}
 
- header section:hover .fa-chevron-left {
+header section:hover .bi-chevron-left {
     opacity: 1;
- }
+}
 
-    
- 
- @media screen and (max-width: 788px) {
+
+
+@media screen and (max-width: 788px) {
     header {
-        position: relative;
         width: 100%;
         height: 100%;
     }
     header nav {
-        padding: 0px 10px;
+        padding: 0px 1px;
         height: 15%;
     }
-    header nav .logo ul{
-        position: absolute;
+    header nav .logo_ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+        float: inline-end;
+    }
+    header nav .logo_ul ul {
+        
         top: 0px;
-        right: 10px;
+        left: 10px;
     }
-    header nav .logo ul li{
-        padding: 3px 5px;
+    header nav .logo_ul ul li {
+        padding: 12px 0px;
     }
-    header nav .logo ul li a{
-        font-size: 12px;
+    header nav .logo_ul ul li a {
+        font-size: 15px;
+        margin: 5px;
     }
     header .content {
         padding-left: 10px;
+        margin-top: 50px;
+    }
+    header .content h1 {
+        font-size: 20px;
     }
     header section {
         padding: 0px 10px;
     }
-    header .content h1 {
-    font-size: 18px;
+    header nav .search_user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+        float: left;
+    }
+    header nav .search_user .search {
+        position: absolute;
+        width: 205px;
+        height: 180px;
+        right: 10px;
+        top: 30px;
+        z-index: 99999;
+        overflow-y: auto;
+    }
+    header .content .details h6 {
+        color: rgb(255, 255, 255, .8);
+        font-size: 11px;
+        margin-right: 6px;
+    }
+    header .content p {
+        font-size: 12px;
+        width: 250px;
+    }
+    header nav .search_user input {
+        padding: 5px 10px;
+        border-radius: 20px;
+        border: none;
+        outline: none;
+        background: rgb(255, 255, 255, .3);
+        color: #fff;
+        margin-right: 20px;
+        width: 110px;
+    }
 }
-}
+
+
