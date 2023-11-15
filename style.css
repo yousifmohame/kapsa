@@ -100,7 +100,7 @@ header nav .logo_ul .btnlogin-popup {
     background: #0079ff;
     transition: 0.1s;
 }
-header nav .logo .btnlogin-popup a{
+header nav .logo_ul .btnlogin-popup a{
     text-decoration: none;
     color: #fff;
   }
