@@ -163,7 +163,7 @@ header nav .search_user .search {
     width: 190px;
     height: 270px;
     right: 40px;
-    top: 60px;
+    top: 70px;
     z-index: 99999;
     overflow-y: auto;
 }
