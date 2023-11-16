@@ -14,43 +14,98 @@ body{
 }
 
 .header {
-    position: fixed;
-    top: 0;
-    left: 0;
     width: 100%;
-    padding: 20px 10%;
-    background: transparent;
-    display: flex;
-    justify-content: space-between;
+    height: 10%;
+    /* border: 1px solid #fff; */
     align-items: center;
-    z-index: 100;
+    justify-content: space-between;
+    padding: 0px 20px;
 }
 
 .logo{
     font-size: 32px;
-    color: #fff;
+    color: #2432f5;
     text-decoration: none;
     font-weight: 700;
-    filter: drop-shadow(0 0 5px #09001d);
 }
 
-.navbar a{
-    font-size: 18px;
-    color: #fff;
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 35px 0px;
+    float: inline-end;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar ul li {
+    padding: 3px 15px;
+}
+
+.navbar ul a{
     text-decoration: none;
-    font-weight: 500;
-    margin-left: 35px;
-    transition: .3s;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    transition: .3s linear;
 }
 
-.navbar a:hover,
-.navbar a.active {
+.navbar ul a:hover,
+.navbar ul a.active {
     color: #c40094;
 }
 
+.navbar .btnlogin-popup {
+    width: 52px;
+    height: 25px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 1rem;
+    border: none;
+    position: relative;
+    background: #0079ff;
+    transition: 0.1s;
+}
+.navbar .btnlogin-popup a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+  }
+.navbar .btnlogin-popup:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background-image: radial-gradient(circle
+      farthest-corner at 10% 20%, 
+       rgba(255,94,247,1) 17.8%,
+        rgba(2,245,255,1)100.2% );
+        filter: blur(15px);
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: 0;
+}
+.navbar .btnlogin-popup:active {
+    transform: scale(0.9) rotate(3deg);
+    background:radial-gradient(circle
+    farthest-corner at 10% 20%, 
+     rgba(255,94,247,1) 17.8%,
+      rgba(2,245,255,1)100.2% );
+      transform: 0.5s;
+
+}
+
+
 .main {
     min-height: 100vh;
-    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5A8ewsVOaw6P-cpb0oh2Aj510kHGtUoehXmrwItR5vmFh5u_2SvmNEsLW6dSuliauA0HPnHImsgzZD1GP6obNzwnyur8vGMShJ2EYHJS8JsRgzdHj6K08MC5tTBQW17HuJnvXIS4hxqtz__jFPObzTz82mpFHDic1nu1aNxRMwTywH34aTiGN5lsMzIO/s2981/background.jpg') no-repeat;
+    background: url('background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
     pointer-events: auto;
@@ -454,6 +509,20 @@ body{
         height: 100vh;
         width: 100%;
     }
+    .logo {
+        font-size: 20px;
+    color: #2432f5;
+    text-decoration: none;
+    padding: 0px 3px;
+    }
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 0px;
+        float: inline-end;
+    }
+    
     
     .quiz-section {
         position: relative;
@@ -470,11 +539,12 @@ body{
 
     .home {
         position: relative;
-        left: -80%;
+        left: -75%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
+        top: -50px;
     }
 
     .home-content h1 {
@@ -505,28 +575,27 @@ body{
         transition: .5s;
     }
     
-    .logo {
-        font-size: 30px;
-        color: #fff;
+    .navbar ul li {
+        padding: 0px 0px;
+    }
+    .navbar ul a {
         text-decoration: none;
-        font-weight: 700;
-        filter: drop-shadow(0 0 5px #09001d);
+        color: #fff;
+        font-size: 13px;
+        font-weight: bold;
+        transition: .3s linear;
+        padding: 0px 9px;
     }
 
     .header {
-        position: fixed;
+        position: relative;
         width: 100%;
-        padding: 0px 0%;
-        background: transparent;
-        display: flex;
-        align-items: center;
+        height: 60px;
+        overflow: hidden;
+        padding: 1px;
     }
 
-    .navbar a {
-        font-size: 13px;
-        color: #fff;
-        text-decoration: none;
-    }
+    
 
     .popup-info {
         position: absolute;
