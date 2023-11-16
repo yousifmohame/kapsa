@@ -539,16 +539,23 @@ body{
 
     .home {
         position: relative;
-        left: -75%;
+        left: -100%;
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        top: -50px;
+        top: 0px;
+    }
+
+    .home-content {
+        width: 400px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
 
     .home-content h1 {
-        font-size: 40px;
+        font-size: 35px;
         text-shadow: 0 0 10px rgba(0, 0, 0, .3);
     }
 
