@@ -274,7 +274,7 @@ header .second .cards::-webkit-scrollbar{
 header .second  .cards .card{
   height: 370px;
   position: relative;
-  min-width: 220px;
+  width: 220px;
   border-radius: 8px;
   margin-right: 10px;
   background: #000;
@@ -438,7 +438,7 @@ header .upcoming .box::-webkit-scrollbar{
 header .upcoming  .box .card{
   height: 370px;
   position: relative;
-  min-width: 220px;
+  width: 220px;
   border-radius: 8px;
   margin-right: 10px;
   background: #000;
@@ -556,7 +556,7 @@ header .show .boxy::-webkit-scrollbar{
 header .show .boxy .card{
   height: 370px;
   position: relative;
-  min-width: 220px;
+  width: 220px;
   border-radius: 8px;
   margin-right: 10px;
   background: #000;
