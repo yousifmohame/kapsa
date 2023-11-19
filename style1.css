@@ -20,6 +20,7 @@ header {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0px 5px 25px -5px #000;
+    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5A8ewsVOaw6P-cpb0oh2Aj510kHGtUoehXmrwItR5vmFh5u_2SvmNEsLW6dSuliauA0HPnHImsgzZD1GP6obNzwnyur8vGMShJ2EYHJS8JsRgzdHj6K08MC5tTBQW17HuJnvXIS4hxqtz__jFPObzTz82mpFHDic1nu1aNxRMwTywH34aTiGN5lsMzIO/s2981/background.jpg);
 }
 
 header::before {
@@ -27,7 +28,7 @@ header::before {
     position: absolute;
     width: 100%;
     height: 100%;
-    background: url('')no-repeat center center/cover;
+    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5A8ewsVOaw6P-cpb0oh2Aj510kHGtUoehXmrwItR5vmFh5u_2SvmNEsLW6dSuliauA0HPnHImsgzZD1GP6obNzwnyur8vGMShJ2EYHJS8JsRgzdHj6K08MC5tTBQW17HuJnvXIS4hxqtz__jFPObzTz82mpFHDic1nu1aNxRMwTywH34aTiGN5lsMzIO/s2981/background.jpg')no-repeat center center/cover;
     
     z-index: -1;
 }
