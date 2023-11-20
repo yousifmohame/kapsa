@@ -810,7 +810,7 @@ header .second .cards {
   align-items: center;
   overflow-x: auto;
   scroll-behavior: smooth;
-  justify-content: flex-start;
+  justify-content: center;
 }
 header .second .cards .card {
   height: 221px;
@@ -838,7 +838,7 @@ header .upcoming .box {
       align-items: center;
       overflow-x: auto;
       scroll-behavior: smooth;
-      justify-content: flex-start;
+      justify-content: center;
 }
 
 
@@ -869,7 +869,7 @@ header .show .boxy {
   align-items: center;
   overflow-x: auto;
   scroll-behavior: smooth;
-  justify-content: flex-start;
+  justify-content: center;
 }
 header .show .boxy .card {
   height: 221px;
