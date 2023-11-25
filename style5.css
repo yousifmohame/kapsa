@@ -285,8 +285,8 @@ header nav .search_user h2{
 }
 
 .second .latest .box .card .details{
-  width: 370px;
-  height: 370px;
+  width: 320px;
+  height: 320px;
   overflow: hidden;
   position: absolute;
   border-radius: 8px;
@@ -396,8 +396,8 @@ header nav .search_user h2{
 }
 
 .upcoming .movies_box .box .card .details{
-  width: 370px;
-  height: 370px;
+  width: 320px;
+  height: 320px;
   overflow: hidden;
   position: absolute;
   border-radius: 8px;
