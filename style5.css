@@ -255,7 +255,7 @@ header nav .search_user h2{
   height: auto;
   margin: 0 auto;
   padding-bottom: 25px;
-  background: #171717;
+  background: transparent;
 }
 
 .second .latest{
@@ -367,7 +367,7 @@ header nav .search_user h2{
   height: auto;
   margin: 0 auto;
   padding-bottom: 25px;
-  background-color: #171717;
+  background: transparent;
 }
 
 .upcoming .movies_box{
