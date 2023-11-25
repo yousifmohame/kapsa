@@ -6,9 +6,9 @@
   color: #0f54a3;
 }
 body {
-  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhljpg5PPCOBqdtU8AxCAFa0_ionmYdX8dIT_Y4sD8VaoyyW7WkN6KTkBCndNQ3Lc5fWF90e1bw8cu7UXjy3a4IODL-56GLwBMv5gvwSH_V4myXFx_WqkmxSsw1_t4ReS1lkH37vuXS6Y3sGQG_OQa-oGiqnnPCmwcreJYxBVdrN_XACLsO9o-9o2SflgEu/s7680/wallpaperflare.com_wallpaper.jpg');
-  background-position: center;
+  background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5A8ewsVOaw6P-cpb0oh2Aj510kHGtUoehXmrwItR5vmFh5u_2SvmNEsLW6dSuliauA0HPnHImsgzZD1GP6obNzwnyur8vGMShJ2EYHJS8JsRgzdHj6K08MC5tTBQW17HuJnvXIS4hxqtz__jFPObzTz82mpFHDic1nu1aNxRMwTywH34aTiGN5lsMzIO/s2981/background.jpg') no-repeat;
   background-size: cover;
+  background-position: center;
   font-family: 'Poppins', sans-serif;
   display: flex;
   min-height: 100vh;
