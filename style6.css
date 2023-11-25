@@ -665,22 +665,29 @@ header .show .boxy .card img{
         font-size: 12px;
     }
     header .second {
-      width: 140%;
-      height: 270px;
-      margin-top: 25px;
-      margin-left: -20%;
+    width: 100%;
+    height: auto;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
   }
   header .show {
-    width: 140%;
-    height: 275px;
-    margin-top: 50px;
-    margin-left: -20%;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-    header .upcoming {
-        
-        width: 140%;
-        height: 180px;
-        margin-left: -20%;
+    header .upcoming { 
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
     }
     header nav  input {
         padding: 5px 9px;
