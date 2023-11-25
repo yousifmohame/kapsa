@@ -263,7 +263,6 @@ header .second  .cards{
     margin-top: 10px;
     display: flex;
     align-items: center;
-    overflow-x: auto;
     scroll-behavior: smooth;
     justify-content: end;
 }
@@ -427,7 +426,6 @@ header .upcoming  .box{
     margin-top: 10px;
     display: flex;
     align-items: center;
-    overflow-x: auto;
     scroll-behavior: smooth;
     justify-content: end;
 }
@@ -545,7 +543,6 @@ header .show .boxy{
     margin-top: 10px;
     display: flex;
     align-items: center;
-    overflow-x: auto;
     scroll-behavior: smooth;
     justify-content: end;
 }
@@ -713,7 +710,6 @@ header .second .cards {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  overflow-x: auto;
   scroll-behavior: smooth;
   justify-content: flex-start;
 }
@@ -742,7 +738,6 @@ header .upcoming .box {
       margin-top: 10px;
       display: flex;
       align-items: center;
-      overflow-x: auto;
       scroll-behavior: smooth;
       justify-content: flex-start;
 }
@@ -774,7 +769,6 @@ header .show .boxy {
   margin-top: 10px;
   display: flex;
   align-items: center;
-  overflow-x: auto;
   scroll-behavior: smooth;
   justify-content: flex-start;
 }
