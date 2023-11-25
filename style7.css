@@ -6,48 +6,35 @@
 }
 
 body {
-    background: rgb(46, 45, 46);
+  background: url('background.jpg') no-repeat;
+  background-size: cover;
+  background-position: center;
     font-family: 'Poppins', sans-serif;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 header {
-    position: relative;
+    position: absolute;
+    top: 0%;
     width: 100%;
-    height: 100%;
-    border: 1px solid #000000;
+    height: 8%;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0px 5px 25px -5px #000;
-    background: url(https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5A8ewsVOaw6P-cpb0oh2Aj510kHGtUoehXmrwItR5vmFh5u_2SvmNEsLW6dSuliauA0HPnHImsgzZD1GP6obNzwnyur8vGMShJ2EYHJS8JsRgzdHj6K08MC5tTBQW17HuJnvXIS4hxqtz__jFPObzTz82mpFHDic1nu1aNxRMwTywH34aTiGN5lsMzIO/s2981/background.jpg);
+}
+section {
+  width: 100%;
+  margin-top: 10%;
 }
 
-header::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: url('https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhB5A8ewsVOaw6P-cpb0oh2Aj510kHGtUoehXmrwItR5vmFh5u_2SvmNEsLW6dSuliauA0HPnHImsgzZD1GP6obNzwnyur8vGMShJ2EYHJS8JsRgzdHj6K08MC5tTBQW17HuJnvXIS4hxqtz__jFPObzTz82mpFHDic1nu1aNxRMwTywH34aTiGN5lsMzIO/s2981/background.jpg')no-repeat center center/cover;
-    
-    z-index: -1;
-}
-
-header::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(180deg, transparent, #000);
-    z-index: -1;
-}
 header nav {
     width: 100%;
-    height: 10%;
+    height: -webkit-fill-available;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 0px 47px;
 }
 
 header nav .logo {
@@ -239,32 +226,29 @@ header nav .search_user .search .card .cont span{
 
 /*--------------*/
 
-header .second{
+section .second{
   width: 100%;
   height: auto;
-  padding: 0px 50px;
+  padding: 0px 15px;
   bottom: 20px;
   color: #fff;
 }
-
-header .second h1 {
-  font-size: 45px;
+section .second h1{
+  font-size: 40px;
   color: #fff;
   margin-bottom: 20px;
   margin-left: 50%;
   transform: translate(-50%, 5%);
   width: max-content;
 }
-
-header .second h2 {
-  font-size: 35px;
-  color: #000000;
+section .second h2 {
+  font-size: 25px;
+  color: #e20c0c;
   margin-left: 50%;
-  transform: translate(-50%, 0%);
+  transform: translate(-50%, -22%);
   width: max-content;
 }
-
-header .second  .cards{
+section .second  .cards{
   position: relative;
     width: 100%;
     height: 350px;
@@ -275,57 +259,53 @@ header .second  .cards{
     scroll-behavior: smooth;
     justify-content: end;
 }
-header .second .cards::-webkit-scrollbar{
+section .second .cards::-webkit-scrollbar{
   display: none;
 
 }
 
-header .second  .cards .card{
+section .second  .cards .card{
   height: 275px;
   position: relative;
   width: 220px;
   border-radius: 8px;
-  margin-right: 10px;
   background: #000;
   transition: .3s linear;
 }
 
-header .second  .cards .card .details{
-  min-width: 220px;
-  height: 275px;
-  overflow: hidden;
-  position: absolute;
-  border-radius: 8px;
-  transition: 0.3s;
-  opacity: 0;
-  right: 220px;
+section .second  .cards .card .details{
+    width: 100%;
+    height: 275px;
+    overflow: hidden;
+    position: absolute;
+    border-radius: 8px;
+    transition: 0.3s;
+    opacity: 0;
+    right: 220px;
 }
 
-header section .cards .card:hover {
-  min-width: 300px;
-  overflow: hidden;
-}
 
-header .second  .cards .card:hover .details{
+section .second  .cards .card:hover .details{
   opacity: 1;
   background: #ffffff;
 }
 
-header .second  .cards .card .details .left{
+section .second  .cards .card .details .left{
   position: absolute;
   bottom: 0;
   color: #fff;
   transform: translateX(-100px);
   transition: 0.4s;
   opacity: 0;
+  
 }
 
-header .second  .cards .card:hover .details .left{
+section .second  .cards .card:hover .details .left{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .second .cards .card .details .left p.name{
+section .second .cards .card .details .left p.name{
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -335,7 +315,7 @@ header .second .cards .card .details .left p.name{
 }
 
 
-header .second .cards .card .details .right{
+section .second .cards .card .details .right{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -345,12 +325,12 @@ header .second .cards .card .details .right{
   opacity: 0;
 }
 
-header .second  .cards .card:hover .details .right{
+section .second  .cards .card:hover .details .right{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .second  .cards .card .details .right i{
+section .second  .cards .card .details .right i{
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -365,13 +345,13 @@ header .second  .cards .card .details .right i{
   flex-direction: column;
 }
 
-header .second  .cards .card img{
+section .second  .cards .card img{
     width: 100%;
     height: 100%;
     border-radius: 8px;
     
 }
-header .second .cards .card::after {
+section .second .cards .card::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -382,58 +362,19 @@ header .second .cards .card::after {
   z-index: -1;
 }
 
-header .second .fa-chevron-left , .fa-chevron-right {
-  position: absolute;
-  top: 20%;
-  left: 3%;
-  width: 25px;
-  height: 25px;
-  background: rgb(255, 255, 255, .3);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 50%;
-  font-size: 12px;
-  cursor: pointer;
-  transition: .3s linear;
-  z-index: 999999999;
-  opacity: 0;
-}
-
-header .second .fa-chevron-right {
- left: unset;
- right: 3%;
- top: 250px;
-}
-
-header .second:hover .fa-chevron-right {
-  opacity: 1;
-}
-
-header .second:hover .fa-chevron-left {
-  opacity: 1;
-}
-
-
 
 /*---------*/
 
-header .upcoming{
+section .upcoming{
   width: 100%;
   height: auto;
-  padding: 0px 50px;
+  padding: 0px 15px;
   bottom: 20px;
   color: #fff;
 }
 
-header .upcoming  h1{
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 20px;
-  float: inline-end;
-}
-header .upcoming  .box{
+
+section .upcoming  .box{
   position: relative;
     width: 100%;
     height: 350px;
@@ -444,23 +385,22 @@ header .upcoming  .box{
     scroll-behavior: smooth;
     justify-content: end;
 }
-header .upcoming .box::-webkit-scrollbar{
+section .upcoming .box::-webkit-scrollbar{
   display: none;
 
 }
 
-header .upcoming  .box .card{
+section .upcoming  .box .card{
   height: 275px;
   position: relative;
   width: 220px;
   border-radius: 8px;
-  margin-right: 10px;
   background: #000;
   transition: .3s linear;
 }
 
-header .upcoming .box .card .details{
-  min-width: 220px;
+section .upcoming .box .card .details{
+  width: 100%;
   height: 275px;
   overflow: hidden;
   position: absolute;
@@ -470,12 +410,12 @@ header .upcoming .box .card .details{
   right: 220px;
 }
 
-header .upcoming .box .card:hover .details{
+section .upcoming .box .card:hover .details{
   opacity: 1;
   background: white;
 }
 
-header .upcoming .box .card .details .left{
+section .upcoming .box .card .details .left{
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -484,12 +424,12 @@ header .upcoming .box .card .details .left{
   opacity: 0;
 }
 
-header .upcoming .box .card:hover .details .left{
+section .upcoming .box .card:hover .details .left{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .upcoming .box .card .details .left p.name{
+section .upcoming .box .card .details .left p.name{
   width: 100%;
   font-size: 20px;
   font-weight: bold;
@@ -499,7 +439,7 @@ header .upcoming .box .card .details .left p.name{
 }
 
 
-header .upcoming .box .card .details .right{
+section .upcoming .box .card .details .right{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -509,12 +449,12 @@ header .upcoming .box .card .details .right{
   opacity: 0;
 }
 
-header .upcoming .box .card:hover .details .right{
+section .upcoming .box .card:hover .details .right{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .upcoming  .box .card .details .right i{
+section .upcoming  .box .card .details .right i{
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -529,7 +469,7 @@ header .upcoming  .box .card .details .right i{
   flex-direction: column;
 }
 
-header .upcoming  .box .card img{
+section .upcoming  .box .card img{
   width: 100%;
     height: 100%;
     border-radius: 8px;
@@ -540,22 +480,16 @@ header .upcoming  .box .card img{
 
 /*----------*/
 
-header .show{
+section .show{
   width: 100%;
   height: auto;
-  padding: 0px 50px;
+  padding: 0px 15px;
   bottom: 20px;
   color: #fff;
 }
 
-header .show h1{
-  font-size: 20px;
-  color: #fff;
-  margin-bottom: 20px;
-  float: inline-end;
-}
 
-header .show .boxy{
+section .show .boxy{
   position: relative;
     width: 100%;
     height: 350px;
@@ -567,22 +501,21 @@ header .show .boxy{
     justify-content: end;
 }
 
-header .show .boxy::-webkit-scrollbar{
+section .show .boxy::-webkit-scrollbar{
   display: none;
 
 }
-header .show .boxy .card{
+section .show .boxy .card{
   height: 275px;
   position: relative;
   width: 220px;
   border-radius: 8px;
-  margin-right: 10px;
   background: #000;
   transition: .3s linear;
 }
 
-header .show .boxy .card .details{
-  min-width: 220px;
+section .show .boxy .card .details{
+  width: 100%;
   height: 275px;
   overflow: hidden;
   position: absolute;
@@ -592,12 +525,12 @@ header .show .boxy .card .details{
   right: 220px;
 }
 
-header .show .boxy .card:hover .details{
+section .show .boxy .card:hover .details{
   opacity: 1;
   background: white;
 }
 
-header .show .boxy .card .details .left{
+section .show .boxy .card .details .left{
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -606,21 +539,21 @@ header .show .boxy .card .details .left{
   opacity: 0;
 }
 
-header .show .boxy .card:hover .details .left{
+section .show .boxy .card:hover .details .left{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .show .boxy .card .details .left p.name{
+section .show .boxy .card .details .left p.name{
   width: 100%;
   font-size: 20px;
   font-weight: bold;
   margin-left: 5px;
-  margin-bottom: 47px;
+  margin-bottom: 45px;
   color: red;
 }
 
-header .show .boxy .card .details .right{
+section .show .boxy .card .details .right{
   position: absolute;
   right: 0;
   bottom: 0;
@@ -630,12 +563,12 @@ header .show .boxy .card .details .right{
   opacity: 0;
 }
 
-header .show .boxy .card:hover .details .right{
+section .show .boxy .card:hover .details .right{
   opacity: 1;
   transform: translateX(0);
 }
 
-header .show .boxy .card .details .right i{
+section .show .boxy .card .details .right i{
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -650,65 +583,72 @@ header .show .boxy .card .details .right i{
   flex-direction: column;
 }
 
-header .show .boxy .card img{
+section .show .boxy .card img{
   width: 100%;
     height: 100%;
     border-radius: 8px;
 }
 
  @media screen and (max-width: 788px) {
-    header {
-        position: relative;
+header {
+        position: fixed;
         width: 100%;
-        height: 100%;
-    }
-    header nav {
-        padding: 0px 10px;
         height: 15%;
-    }
-    header nav  h2 {
+}
+header nav {
+  padding: 0px 5px;
+}
+section {
+      width: 100%;
+      margin-top: 25%;
+}
+
+
+header nav  h2 {
       width: 90px;
       font-size: 30px;
       color: #0079ff;
       padding-top: 30px;
-  }
-  header .second h2 {
+}
+section .second h2 {
     font-size: 20px;
-    color: #000000;
+    color: #e20c0c;
     margin-left: 50%;
     transform: translate(-50%, -22%);
     width: max-content;
 }
-    header nav .logo ul{
+
+header nav .logo ul{
         position: absolute;
         top: 0px;
         right: 10px;
-    }
-    header nav .logo ul li{
-        padding: 3px 5px;
-    }
-    header nav .logo ul li a{
-        font-size: 12px;
-    }
-    header .second {
-      width: 140%;
-      height: 270px;
-      margin-top: 25px;
-      margin-left: -20%;
-  }
-  header .show {
-    width: 140%;
-    height: 300px;
-    margin-top: 50px;
-    margin-left: -20%;
 }
-    header .upcoming {
-        
-        width: 140%;
-        height: 180px;
-        margin-left: -20%;
-    }
-    header nav  input {
+header nav .logo ul li{
+        padding: 3px 5px;
+}
+header nav .logo ul li a{
+        font-size: 12px;
+}
+section .second {
+  width: 100%;
+  height: auto;
+  margin-top: 25px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section .show {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+section .upcoming {
+  width: 100%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+header nav  input {
         padding: 5px 9px;
         border-radius: 20px;
         border: none;
@@ -718,26 +658,13 @@ header .show .boxy .card img{
         margin-left: 5px;
         margin-top: 31px;
         float: right;
-    }
-  header nav .search_user .search {
-    position: absolute;
-    width: 380px;
-    height: 30px;
-    left: 0;
-    top: 40px;
-    z-index: 99999;
-    overflow-y: auto;
 }
-header .second .cards .card .details {
-  overflow: hidden;
-  position: absolute;
-  border-radius: 8px;
-  transition: 0.3s;
-  opacity: 0;
+
+section .second .cards .card .details {
   left: 0px;
-  height: 222px;
+  height: -webkit-fill-available;
 }
-header .second .cards .card .details .left {
+section .second .cards .card .details .left {
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -746,21 +673,14 @@ header .second .cards .card .details .left {
   opacity: 0;
   height: 215px;
 }
-header .second .cards .card .details .right i {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #ffe100;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #282931;
-  margin: 15px 5px 7px 0px;
-  display: flex;
-  flex-direction: column;
+section .second .cards .card .details .left p.name{
+  font-size: 17px;
+  margin-top: 10%;
 }
-header .upcoming .box .card .details .left {
+section .second .cards .card .details .right i {
+  margin: 15px 13px 5px 0px;
+}
+section .upcoming .box .card .details .left {
   position: absolute;
   bottom: 0;
   color: #fff;
@@ -769,123 +689,67 @@ header .upcoming .box .card .details .left {
   opacity: 0;
   height: 215px;
 }
-header .upcoming .box .card .details .right i {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #ffe100;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #282931;
-  margin: 15px 5px 7px 0px;
-  display: flex;
-  flex-direction: column;
+section .show .boxy .card .details .left p.name{
+  font-size: 17px;
+  margin-top: 10%;
 }
-header .show .boxy .card:hover .details .left {
+section .upcoming .box .card .details .right i {
+  margin: 15px 13px 5px 0px;
+}
+section .show .boxy .card:hover .details .left {
   opacity: 1;
   transform: translateX(0);
   height: 215px;
 }
-header .show .boxy .card .details .right i {
-  width: 40px;
-  height: 40px;
-  line-height: 40px;
-  font-size: 20px;
-  text-align: center;
-  background-color: #ffe100;
-  border-radius: 50%;
-  cursor: pointer;
-  color: #282931;
-  margin: 15px 5px 32px 0px;
-  display: flex;
-  flex-direction: column;
+section .show .boxy .card .details .right i {
+  margin: 29px 13px 30px 0px;
 }
-header .second .cards {
-  position: relative;
-  width: 115%;
-  margin-top: -65px;
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  justify-content: center;
+section .upcoming .box .card .details .left p.name{
+  font-size: 17px;
+  margin-top: 10%;
 }
-header .second .cards .card {
+section .second .cards {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+section .second .cards .card {
   height: 221px;
-  position: relative;
-  min-width: 158px;
-  border-radius: 8px;
-  margin-right: 10px;
-  background: #000;
-  transition: .3s linear;
 }
-header .upcoming .box .card .details {
-      overflow: hidden;
-      position: absolute;
-      border-radius: 8px;
-      transition: 0.3s;
-      opacity: 0;
+section .upcoming .box .card .details {
       left: 0px;
-      height: 222px;
+      height: -webkit-fill-available;
 }
-header .upcoming .box {
-      position: relative;
-      width: 115%;
-      margin-top: 0;
-      display: flex;
-      align-items: center;
-      overflow-x: auto;
-      scroll-behavior: smooth;
-      justify-content: center;
+section .upcoming .box {
+      
+      width: 100%;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-right: auto;
+      margin-left: auto;
 }
 
-
-
-header .upcoming .box .card {
+section .upcoming .box .card {
       height: 221px;
-      position: relative;
-      min-width: 158px;
-      border-radius: 8px;
-      margin-right: 10px;
-      background: #000;
-      transition: .3s linear;
 }
-header .show .boxy .card .details {
-      overflow: hidden;
-      position: absolute;
-      border-radius: 8px;
-      transition: 0.3s;
-      opacity: 0;
+section .show .boxy .card .details {
       left: 0px;
-      height: 222px;
+      height: -webkit-fill-available;
 }
-header .show .boxy {
-  position: relative;
-  width: 115%;
-  margin-top: 0;
-  display: flex;
-  align-items: center;
-  overflow-x: auto;
-  scroll-behavior: smooth;
-  justify-content: center;
+section .show .boxy {
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
 }
-header .show .boxy .card {
+section .show .boxy .card {
   height: 221px;
-  position: relative;
-  min-width: 158px;
-  border-radius: 8px;
-  margin-right: 10px;
-  background: #000;
-  transition: .3s linear;
 }
 
-header section {
-        padding: 0px 10px;
-}
-
-header .second h1 {
+section .second h1 {
   font-size: 23px;
   color: #fff;
   margin-bottom: 20px;
@@ -894,4 +758,3 @@ header .second h1 {
   width: max-content;
 }
 }
-    
