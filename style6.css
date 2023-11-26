@@ -45,20 +45,30 @@ header::after {
 header nav {
     width: 100%;
     height: 10%;
-    display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0px 50px;
+    padding: 0px 20px;
 }
 
 header nav .logo {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 35px 0px;
+    float: inline-end;
+}
+
+header nav .search_user{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 35px 0px;
+  float: left;;
 }
 
 header nav .search_user h2{
-    width: 90px;
+    width: 105px;
     font-size: 30px;
     color:#0079ff;  
 }
@@ -78,7 +88,7 @@ header nav .logo ul li{
 header nav .logo ul li a{
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     transition: .3s linear;
 }
@@ -126,21 +136,14 @@ header nav .logo .btnlogin-popup:active {
 
 }
 
-header nav .search_user{
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
 header nav .search_user input {
-    padding: 5px 15px;
+    padding: 5px 10px;
     border-radius: 20px;
     border: none;
     outline: none;
-    background: rgba(209, 65, 209, .3);
-    color: #0079ff ;
-    margin-left: 10px;
+    background: rgb(255, 255, 255, .3);
+    color: #fff;
+    margin-right: 20px;
 }
 
 header nav .search_user input::placeholder{
@@ -244,6 +247,7 @@ header .second{
   width: 100%;
   height: auto;
   padding: 0px 50px;
+  margin-top: 80px;
   bottom: 20px;
   color: #fff;
 }
@@ -639,32 +643,39 @@ header .show .boxy .card img{
 }
 
  @media screen and (max-width: 788px) {
-    header {
-        position: relative;
-        width: 100%;
-        height: 100%;
-    }
-    header nav {
-        padding: 0px 10px;
-        height: 15%;
-    }
-    header nav  h2 {
-      width: 90px;
-      font-size: 30px;
-      color: #0079ff;
-      padding-top: 30px;
-  }
-    header nav .logo ul{
-        position: absolute;
-        top: 0px;
-        right: 10px;
-    }
-    header nav .logo ul li{
-        padding: 3px 5px;
-    }
-    header nav .logo ul li a{
-        font-size: 12px;
-    }
+  header {
+    width: 100%;
+    height: 100%;
+}
+header nav {
+    padding: 0px 1px;
+    height: 15%;
+}
+header nav .logo {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0px 0px;
+float: inline-end;
+}
+header nav .search_user {
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0px 0px;
+float: left;
+}
+header nav .logo ul{
+    top: 0px;
+    left: 10px;
+}
+header nav .logo ul li{
+    padding: 12px 0px;
+}
+header nav .logo ul li a{
+    font-size: 15px;
+    margin: 5px;
+}
     header .second {
     width: 100%;
     height: auto;
@@ -674,6 +685,14 @@ header .show .boxy .card img{
     padding-left: 15px;
     padding-right: 15px;
   }
+  header .second h1 {
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-left: 50%;
+    transform: translate(-50%, 5%);
+    width: max-content;
+}
   header .show {
     width: 100%;
     height: auto;
@@ -690,25 +709,24 @@ header .show .boxy .card img{
     padding-left: 15px;
     padding-right: 15px;
     }
-    header nav  input {
-        padding: 5px 9px;
-        border-radius: 20px;
-        border: none;
-        outline: none;
-        background: rgba(209, 65, 209, .3);
-        color: #0079ff;
-        margin-left: 5px;
-        margin-top: 31px;
-        float: right;
-    }
   header nav .search_user .search {
     position: absolute;
-    width: 380px;
-    height: 30px;
-    left: 0;
-    top: 40px;
+    width: 205px;
+    height: 180px;
+    right: 10px;
+    top: 30px;
     z-index: 99999;
     overflow-y: auto;
+}
+header nav .search_user input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255, .3);
+  color: #fff;
+  margin-right: 20px;
+  width: 110px;
 }
 header .second .cards .card .details {
   min-width: 159px;
@@ -812,6 +830,7 @@ header .second h1 {
   margin-left: 50%;
   transform: translate(-50%, 5%);
   width: max-content;
+  margin-top: 100px;
 }
 }
     
