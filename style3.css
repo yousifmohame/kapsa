@@ -802,17 +802,6 @@ header .showing {
     padding-left: 15px;
     padding-right: 15px;
     }
-    header nav  input {
-        padding: 5px 9px;
-        border-radius: 20px;
-        border: none;
-        outline: none;
-        background: rgba(209, 65, 209, .3);
-        color: #0079ff;
-        margin-left: 5px;
-        margin-top: 31px;
-        float: right;
-    }
   header nav .search_user .search {
     position: absolute;
     width: 205px;
@@ -832,7 +821,6 @@ header nav .search_user input {
   color: #fff;
   margin-right: 20px;
   width: 110px;
-  margin-top: inherit;
 }
 
 header .second .cards .card .details {
