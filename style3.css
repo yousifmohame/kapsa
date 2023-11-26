@@ -67,9 +67,9 @@ header nav .search_user{
 }
 
 header nav .search_user h2{
-    width: 90px;
-    font-size: 30px;
-    color:#0079ff;  
+  width: 105px;
+  font-size: 30px;
+  color: #0079ff;  
 }
 
 header nav .logo ul{
@@ -136,13 +136,13 @@ header nav .logo .btnlogin-popup:active {
 }
 
 header nav .search_user input {
-    padding: 5px 15px;
-    border-radius: 20px;
-    border: none;
-    outline: none;
-    background: rgba(209, 65, 209, .3);
-    color: #0079ff ;
-    margin-left: 10px;
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255, .3);
+  color: #fff;
+  margin-right: 20px;
 }
 
 header nav .search_user input::placeholder{
@@ -736,35 +736,43 @@ header .showing{
 
  @media screen and (max-width: 788px) {
     header {
-        position: relative;
+        
         width: 100%;
         height: 100%;
     }
     header nav {
-        padding: 0px 10px;
+        padding: 0px 1px;
         height: 15%;
     }
-    header nav  h2 {
-      width: 90px;
-      font-size: 30px;
-      color: #0079ff;
-      padding-top: 30px;
+  header nav .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    float: inline-end;
   }
+  header nav .search_user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 0px;
+    float: left;
+}
     header nav .logo ul{
-        position: absolute;
         top: 0px;
-        right: 10px;
+        left: 10px;
     }
     header nav .logo ul li{
-        padding: 3px 5px;
+        padding: 12px 0px;
     }
     header nav .logo ul li a{
-        font-size: 12px;
+        font-size: 15px;
+        margin: 5px;
     }
     header .second {
     width: 100%;
     height: auto;
-    margin-top: 25px;
+    margin-top: 70px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
@@ -807,13 +815,26 @@ header .showing {
     }
   header nav .search_user .search {
     position: absolute;
-    width: 380px;
-    height: 30px;
-    left: 0;
-    top: 40px;
+    width: 205px;
+    height: 180px;
+    right: 10px;
+    top: 30px;
     z-index: 99999;
     overflow-y: auto;
 }
+
+header nav .search_user input {
+  padding: 5px 10px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  background: rgb(255, 255, 255, .3);
+  color: #fff;
+  margin-right: 20px;
+  width: 110px;
+  margin-top: inherit;
+}
+
 header .second .cards .card .details {
   min-width: 159px;
   height: 220px;
